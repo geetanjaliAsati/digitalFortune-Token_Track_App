@@ -1,13 +1,145 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --white: #fff;
+  --blue: #11a5ea;
+  --black: #0a0a0b;
+  --body-text-2: #bcb0c7;
+  --white-100: white;
+  --body-text: #bcb0c7;
+  --deep-pink-100: #dd53ff;
+  --deep-red-100: rgb(232, 11, 11);
+  --lilac-20: rgba(154, 125, 238, 0.2);
+  --light-pink-20: rgba(237, 164, 255, 0.2);
+  --light-pink: #eda4ff;
+  --light-grey: #f4f4f4;
+  --violet: #7e5af7;
+  --lilac: #9a7dee;
+  --pro-blue-soft: #828fff;
+  --pro-blue: #364aff;
+  --pro-blue-accent: #29afff;
+  --violet-4: rgba(126, 90, 247, 0.04);
+  --violet-14: rgba(126, 90, 247, 0.14);
+  --deep-pink-18: rgba(221, 83, 255, 0.18);
+  --deep-pink-32: rgba(221, 83, 255, 0.18);
+  --white-10-101: rgba(255, 255, 255, 0.1);
+  --gray: #2f2b33;
+  --silver: #766c80;
+  --violet-22: rgba(126, 90, 247, 0.22);
+  --pro-blue-dark: #202c98;
+  --pro-yellow-accent: #ffd336;
+  --white-60: rgba(255, 255, 255, 0.6);
+  --app-blue: #3a80e9;
 }
 
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: var(--black);
+  color: var(--white);
+  min-height: 200vh;
+}
+
+::selection {
+  color: var(--white);
+  background-color: var(--violet);
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--gray);
+  box-shadow: inset 0 0 5px grey; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--lilac);;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--violet);
+  /* transition: all 0.2ms; */
+  border-radius: 10px;
+}
+
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
 }
