@@ -3,6 +3,7 @@
 :root {
   --white: #fff;
   --blue: #11a5ea;
+  --light-purple-pro-1: #8e24aa;
   --black: #0a0a0b;
   --body-text-2: #bcb0c7;
   --white-100: white;
@@ -13,9 +14,10 @@
   --light-pink-20: rgba(237, 164, 255, 0.2);
   --light-pink: #eda4ff;
   --light-grey: #f4f4f4;
-  --violet: #7e5af7;
+  --violet: #4c1de6;
   --lilac: #9a7dee;
   --pro-blue-soft: #828fff;
+  --pro-dark-purple: #394cf9;
   --pro-blue: #364aff;
   --pro-blue-accent: #29afff;
   --violet-4: rgba(126, 90, 247, 0.04);
@@ -98,10 +100,11 @@ body {
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  position: "-webkit-sticky";
   background-color: var(--black);
+  overflow-x: hidden;
   color: var(--white);
-  min-height: 200vh;
+  /* min-height: 200vh; */
 }
 
 ::selection {
@@ -119,19 +122,22 @@ code {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--gray);
-  box-shadow: inset 0 0 5px grey; 
+  background: #333333;
+  /* background: var(--gray); */
+  /* box-shadow: inset 0 0 5px grey;  */
 }
 
-/* Handle */
+/* Thumb Color: #64ffda (a bright cyan)
+Track Color: #424242 (a da*/
 ::-webkit-scrollbar-thumb {
-  background: var(--lilac);;
+  background:  #ffffff;
+  /* background: var(--lilac); */
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--violet);
+  background: var(--light-purple-pro-1);
   /* transition: all 0.2ms; */
   border-radius: 10px;
 }
@@ -142,4 +148,7 @@ img {
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
+}
+a {
+  text-decoration: none;
 }

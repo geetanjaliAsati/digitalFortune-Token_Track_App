@@ -1,0 +1,16 @@
+.btnDiv {
+    color: var(--white);
+    font-weight: 600;
+    text-transform: capitalize;
+    width: min-content;
+    padding: 0.7rem 0.8rem;
+    background-color: var(--blue);
+    border-radius: 2rem;
+    margin-left: 0.5rem;
+}
+
+.btnDiv:hover {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: all 0.2ms;
+    color: var(--light-purple-pro-1);
+}
