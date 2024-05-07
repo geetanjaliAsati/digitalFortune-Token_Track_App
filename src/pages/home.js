@@ -1,12 +1,12 @@
 import React from 'react'
 import Header from '../components/common/Header/index'
+import LandingIntro from '../components/LandingPage/Intro'
 const home = () => {
   return (
-    <div  style={{minHeight: "700vh"}}>
+    <div>
         <Header />
-        <div style={{marginTop: "1rem"}}>
-          <p>Geetanjali Asati</p>
-        </div>
+        <LandingIntro />
+       
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
-import Button from "../Button/index";
+import Button from "../Button/Button";
 import SwipeableTemporaryDrawer from "./Drawer";
 const Header = () => {
   return (
