@@ -1,6 +1,6 @@
 .navbar {
     position: sticky;
-    top: 0;
+top: 0px;
     /* position: "-webkit-sticky"; */
     background-color: aliceblue;
     /* width: 100%; */

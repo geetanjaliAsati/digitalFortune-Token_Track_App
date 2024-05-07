@@ -3,7 +3,7 @@ import Header from '../components/common/Header/index'
 import LandingIntro from '../components/LandingPage/Intro'
 const home = () => {
   return (
-    <div>
+    <div >
         <Header />
         <LandingIntro />
        

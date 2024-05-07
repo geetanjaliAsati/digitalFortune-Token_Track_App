@@ -94,7 +94,10 @@
   font-style: italic;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+}
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -102,9 +105,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: "-webkit-sticky";
   background-color: var(--black);
-  overflow-x: hidden;
   color: var(--white);
-  /* min-height: 200vh; */
+  min-height: 200vh;
 }
 
 ::selection {
